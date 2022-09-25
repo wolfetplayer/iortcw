@@ -1240,10 +1240,6 @@ ifeq ($(USE_MUMBLE),1)
   CLIENT_CFLAGS += -DUSE_MUMBLE
 endif
 
-ifdef STEAM
-  CLIENT_CFLAGS += -DSTEAM
-endif
-
 ifeq ($(USE_INTERNAL_ZLIB),1)
   ZLIB_CFLAGS = -DNO_GZIP -I$(ZDIR)
 else
